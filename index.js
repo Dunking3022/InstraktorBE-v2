@@ -11,9 +11,9 @@ const PORT = 3001;
 const logger = require("morgan");
 
 const corsConfig = {
-    origin: 'http://localhost:3000',
+    origin: 'https://instraktor-lms-v2.vercel.app',
     credentials: true,
-} 
+}
 
 app.use(logger("dev"));
 app.use(cors(corsConfig));
